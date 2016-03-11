@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/MySQL/Connector.J 5.1/mysql-connector-java-5.1.38-bin.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.context_4.2.3.20151116-RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.beans_4.2.3.20151116-RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springsource.ide.eclipse.commons.core_3.7.2.201511260840-RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.core_4.2.3.20151116-RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.expression_4.2.3.20151116-RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.aop_4.2.3.20151116-RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.context.support_4.2.3.20151116-RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.data.core_1.9.1.20150106-RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.jdbc_4.2.3.20151116-RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.jms_4.2.3.20151116-RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.orm_4.2.3.20151116-RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.oxm_4.2.3.20151116-RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.transaction_4.2.3.20151116-RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.web_4.2.3.20151116-RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.web.servlet_4.2.3.20151116-RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.apache.commons.logging_1.1.1.v201101211721.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="lib/org.springframework.test-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/javax.activation_1.1.0.v201211130549.jar"/>
+	<classpathentry kind="lib" path="lib/javax.mail_1.4.0.v201005080615.jar"/>
+	<classpathentry kind="lib" path="lib/mockito-core-1.10.19.jar"/>
+	<classpathentry kind="lib" path="lib/org.aopalliance_1.0.0.v201105210816.jar"/>
+	<classpathentry kind="lib" path="lib/org.aspectj.ajde_1.8.7.20150910082200.jar"/>
+	<classpathentry kind="lib" path="lib/org.aspectj.runtime_1.8.7.20150910082200.jar"/>
+	<classpathentry kind="lib" path="lib/org.aspectj.runtime.source_1.8.7.20150910082200.jar"/>
+	<classpathentry kind="lib" path="lib/org.aspectj.weaver_1.8.7.20150910082200.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.aspectj_2.2.4.e45x-20150925-0800.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.equinox.weaving.aspectj_1.0.400.weaving-hook-20140821.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.equinox.weaving.aspectj.source_1.0.400.weaving-hook-20140821.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
