@@ -15,6 +15,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
+import org.springframework.dao.TransientDataAccessResourceException;
 import org.springframework.mail.MailException;
 import org.springframework.mail.MailSender;
 import org.springframework.mail.SimpleMailMessage;
@@ -167,6 +168,11 @@ public class UserServiceTest {
 		assertThat(testUserService, instanceOf(java.lang.reflect.Proxy.class));
 	}
 	
+	@Test(expected=TransientDataAccessResourceException.class)
+	public void readOnlyTransactionAttribute() {
+		testUserService.getAll();
+	}
+	
 	static class TestUserServiceImpl extends UserServiceImpl {
 		private String id = "madnite1";
 		
@@ -175,6 +181,14 @@ public class UserServiceTest {
 			if(user.getId().equals(this.id)) 
 				throw new TestUserServiceException();
 			super.upgradeLevel(user);
+		}
+
+		@Override
+		public List<User> getAll() {
+			for(User user : super.getAll()) {
+				super.update(user);
+			}
+			return null;
 		}
 	}
 	
