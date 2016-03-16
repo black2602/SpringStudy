@@ -1,8 +1,12 @@
 package springbook.user.service;
 
-import static org.hamcrest.CoreMatchers.*;
-import static org.junit.Assert.*;
-import static springbook.user.service.UserServiceImpl.*;
+import static org.hamcrest.CoreMatchers.instanceOf;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.notNullValue;
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.fail;
+import static springbook.user.service.UserServiceImpl.MIN_LOGCOUNT_FOR_SILVER;
+import static springbook.user.service.UserServiceImpl.MIN_RECOMMEND_FOR_GOLD;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,6 +27,9 @@ import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.TransactionStatus;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.support.DefaultTransactionDefinition;
 
 import springbook.user.dao.UserDao;
 import springbook.user.domain.Level;
@@ -171,6 +178,14 @@ public class UserServiceTest {
 	@Test(expected=TransientDataAccessResourceException.class)
 	public void readOnlyTransactionAttribute() {
 		testUserService.getAll();
+	}
+	
+	@Test
+	@Transactional
+	public void transactionSync() {
+		userDao.deleteAll();
+		userService.add(users.get(0));
+		userService.add(users.get(1));
 	}
 	
 	static class TestUserServiceImpl extends UserServiceImpl {
