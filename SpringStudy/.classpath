@@ -32,5 +32,6 @@
 	<classpathentry kind="lib" path="lib/org.eclipse.aspectj_2.2.4.e45x-20150925-0800.jar"/>
 	<classpathentry kind="lib" path="lib/org.eclipse.equinox.weaving.aspectj_1.0.400.weaving-hook-20140821.jar"/>
 	<classpathentry kind="lib" path="lib/org.eclipse.equinox.weaving.aspectj.source_1.0.400.weaving-hook-20140821.jar"/>
+	<classpathentry kind="lib" path="lib/com.springsource.org.castor-1.2.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
