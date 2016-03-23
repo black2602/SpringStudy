@@ -1,12 +1,18 @@
 package springbook.user.sqlservice.updatable;
 
-import static org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType.*;
+import static org.junit.Assert.*;
+import static org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType.HSQL;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import org.junit.After;
+import org.junit.Test;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabase;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 
 import springbook.issuetracker.sqlservice.AbstractUpdatableSqlRegistryTest;
+import springbook.issuetracker.sqlservice.SqlUpdateFailureException;
 import springbook.issuetracker.sqlservice.UpdatableSqlRegistry;
 
 public class EmbeddedDbSqlRegistryTest extends AbstractUpdatableSqlRegistryTest {
@@ -30,4 +36,20 @@ public class EmbeddedDbSqlRegistryTest extends AbstractUpdatableSqlRegistryTest 
 		db.shutdown();
 	}
 
+	@Test
+	public void transactionalUpdate() {
+		checkFindResult("SQL1", "SQL2", "SQL3");
+		
+		Map<String, String> sqlmap = new HashMap<String, String>();
+		sqlmap.put("KEY1", "Modified1");
+		sqlmap.put("KEY9999!@#$", "Modified9999");
+		
+		try {
+			sqlRegistry.updateSql(sqlmap);
+			fail();
+		} catch(SqlUpdateFailureException e) {}
+		
+		checkFindResult("SQL1", "SQL2", "SQL3");
+		
+	}
 }

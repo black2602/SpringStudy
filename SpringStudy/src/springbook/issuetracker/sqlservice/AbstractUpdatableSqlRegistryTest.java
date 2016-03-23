@@ -13,7 +13,7 @@ import springbook.user.sqlservice.SqlNotFoundException;
 import springbook.user.sqlservice.updatable.ConcurrentHashMapSqlRegistry;
 
 public abstract class AbstractUpdatableSqlRegistryTest {
-	UpdatableSqlRegistry sqlRegistry;
+	protected UpdatableSqlRegistry sqlRegistry;
 	
 	@Before
 	public void setup() {
