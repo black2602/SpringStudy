@@ -3,21 +3,8 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="lib" path="C:/Program Files (x86)/MySQL/Connector.J 5.1/mysql-connector-java-5.1.38-bin.jar"/>
-	<classpathentry kind="lib" path="lib/org.springframework.context_4.2.3.20151116-RELEASE.jar"/>
-	<classpathentry kind="lib" path="lib/org.springframework.beans_4.2.3.20151116-RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/org.springsource.ide.eclipse.commons.core_3.7.2.201511260840-RELEASE.jar"/>
-	<classpathentry kind="lib" path="lib/org.springframework.core_4.2.3.20151116-RELEASE.jar"/>
-	<classpathentry kind="lib" path="lib/org.springframework.expression_4.2.3.20151116-RELEASE.jar"/>
-	<classpathentry kind="lib" path="lib/org.springframework.aop_4.2.3.20151116-RELEASE.jar"/>
-	<classpathentry kind="lib" path="lib/org.springframework.context.support_4.2.3.20151116-RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/org.springframework.data.core_1.9.1.20150106-RELEASE.jar"/>
-	<classpathentry kind="lib" path="lib/org.springframework.jdbc_4.2.3.20151116-RELEASE.jar"/>
-	<classpathentry kind="lib" path="lib/org.springframework.jms_4.2.3.20151116-RELEASE.jar"/>
-	<classpathentry kind="lib" path="lib/org.springframework.orm_4.2.3.20151116-RELEASE.jar"/>
-	<classpathentry kind="lib" path="lib/org.springframework.oxm_4.2.3.20151116-RELEASE.jar"/>
-	<classpathentry kind="lib" path="lib/org.springframework.transaction_4.2.3.20151116-RELEASE.jar"/>
-	<classpathentry kind="lib" path="lib/org.springframework.web_4.2.3.20151116-RELEASE.jar"/>
-	<classpathentry kind="lib" path="lib/org.springframework.web.servlet_4.2.3.20151116-RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/org.apache.commons.logging_1.1.1.v201101211721.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="lib/org.springframework.test-3.0.7.RELEASE.jar"/>
@@ -33,5 +20,26 @@
 	<classpathentry kind="lib" path="lib/org.eclipse.equinox.weaving.aspectj_1.0.400.weaving-hook-20140821.jar"/>
 	<classpathentry kind="lib" path="lib/org.eclipse.equinox.weaving.aspectj.source_1.0.400.weaving-hook-20140821.jar"/>
 	<classpathentry kind="lib" path="lib/com.springsource.org.castor-1.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.datatools.enablement.hsqldb_1.0.0.v201107221502.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.aop-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.asm-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.aspects-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.beans-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.context-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.context.support-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.core-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.expression-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.instrument-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.instrument.tomcat-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.jdbc-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.jms-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.orm-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.oxm-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.transaction-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.web-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.web.portlet-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.web.servlet-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.web.struts-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/com.springsource.org.hsqldb-1.8.0.9.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
