@@ -3,18 +3,20 @@ package springbook.user.dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
-import java.util.Map;
 
 import javax.sql.DataSource;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Repository;
 
 import springbook.user.domain.Level;
 import springbook.user.domain.User;
 import springbook.user.sqlservice.SqlService;
 
+@Repository("userDao")
 public class UserDaoJdbc implements UserDao {
 	private RowMapper<User> userMapper = new RowMapper<User>() {
 
@@ -34,12 +36,15 @@ public class UserDaoJdbc implements UserDao {
 	
 	private JdbcTemplate jdbcTemplate;
 
+	@Autowired
 	private SqlService sqlService;
 	
-	public void setSqlService(SqlService sqlService) {
-		this.sqlService = sqlService;
-	}
+	//생략가능
+//	public void setSqlService(SqlService sqlService) {
+//		this.sqlService = sqlService;
+//	}
 	
+	@Autowired
 	public void setDataSource(DataSource dataSource) {
 		this.jdbcTemplate = new JdbcTemplate(dataSource);
 	}
